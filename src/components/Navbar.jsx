@@ -84,6 +84,9 @@ const Navbar = () => {
               <a href={link.link}>{link.name}</a>
             </li>
           ))}
+          <li className="hover:text-indigo-600 dark:hover:text-indigo-300">
+            <Link to={"/login-admin"}>Login</Link>
+          </li>
         </ul>
 
         {/* Toggle Icon Button */}
