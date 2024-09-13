@@ -2,6 +2,7 @@ import { Close, Menu } from "@mui/icons-material";
 import Logo from "../assets/images/logo.png";
 import Moon from "../assets/images/moon.png";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const links = [
@@ -70,7 +71,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           <img className="w-12" src={Logo} alt="" />
           <span className="text-3xl font-bold text-indigo-900 dark:text-white">
-            Portwind.
+            <Link to={"/login-admin"}>Portwind.</Link>
           </span>
         </div>
         {/* Menu */}
