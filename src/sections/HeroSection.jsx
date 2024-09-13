@@ -4,7 +4,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const HeroSection = () => {
   const [text] = useTypewriter({
-    words: ["Vedio Editor", "Graphic Designer", "Virtual Assistant"],
+    words: ["Video Editor", "Graphic Designer", "Virtual Assistant"],
     loop: 0,
     typeSpeed: 100,
     deleteSpeed: 100,
