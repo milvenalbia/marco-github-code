@@ -16,20 +16,20 @@ function App() {
     );
   };
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/marco-portfolio">
       <Routes>
         {/* Public Route */}
-        <Route path="/marco-portfolio/" element={<Guest />} />
+        <Route path="/" element={<Guest />} />
 
         {/* Login Route */}
         <Route
-          path="/marco-portfolio/login-admin"
+          path="/login-admin"
           element={<Login setCurrentUser={setCurrentUser} />}
         />
 
         {/* Protected Route */}
         <Route
-          path="/marco-portfolio/authenticated"
+          path="/authenticated"
           element={
             <RequireAuth>
               <Admin />
