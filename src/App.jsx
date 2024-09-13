@@ -9,23 +9,27 @@ function App() {
   const [currentUser, setCurrentUser] = useState(null);
 
   const RequireAuth = ({ children }) => {
-    return currentUser ? children : <Navigate to="/login-admin" />;
+    return currentUser ? (
+      children
+    ) : (
+      <Navigate to="/marco-portfolio/login-admin" />
+    );
   };
   return (
     <BrowserRouter>
       <Routes>
         {/* Public Route */}
-        <Route path="/" element={<Guest />} />
+        <Route path="/marco-portfolio/" element={<Guest />} />
 
         {/* Login Route */}
         <Route
-          path="/login-admin"
+          path="/marco-portfolio/login-admin"
           element={<Login setCurrentUser={setCurrentUser} />}
         />
 
         {/* Protected Route */}
         <Route
-          path="/authenticated"
+          path="/marco-portfolio/authenticated"
           element={
             <RequireAuth>
               <Admin />
