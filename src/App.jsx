@@ -6,7 +6,7 @@ import Admin from "./adminSections/Admin";
 import { useState } from "react";
 
 function App() {
-  const [currentUser, setCurrentUser] = useState(true);
+  const [currentUser, setCurrentUser] = useState(null);
 
   const RequireAuth = ({ children }) => {
     return currentUser ? children : <Navigate to="/login-admin" />;
