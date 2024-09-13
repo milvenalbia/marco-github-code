@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import Man from "../assets/images/man.png";
 import Navbar from "../components/Navbar";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
@@ -20,7 +21,7 @@ const HeroSection = () => {
       {/* Hero content */}
       {/* Image */}
       <img
-        className="absolute bottom-0 -right-6 lg:right-36  lg:left-0 mx-auto h-5/6 object-cover"
+        className="absolute bottom-0 -right-6 lg:right-36  lg:left-0 mx-auto h-[75%] sm:h-5/6 object-cover"
         src={Man}
         alt=""
       />
@@ -36,10 +37,30 @@ const HeroSection = () => {
         </p>
       </div>
 
+      <div className="absolute top-[55%] left-5 flex gap-2 sm:hidden ">
+        <Link
+          className="bg-indigo-600 text-white text-sm sm:text-xl px-2 py-1 w-fit rounded-md font-semibold cursor-pointer"
+          to="contact"
+          smooth={true}
+          duration={500}
+        >
+          Hire Me
+        </Link>
+
+        <Link
+          className="bg-emerald-400 text-white text-sm sm:text-xl px-2 py-1 w-fit rounded-md font-semibold cursor-pointer"
+          to="works"
+          smooth={true}
+          duration={500}
+        >
+          My Works
+        </Link>
+      </div>
+
       {/* Text Box */}
       <div className="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 right-10 m-auto bg-white dark:bg-slate-900 dark:shadow-slate-800 p-6 h-fit w-1/3 lg:top-1/3 lg:right-5 xl:top-0 xl:right-10">
         <h1 className="text-4xl font-bold text-indigo-900 dark:text-indigo-300">
-          Hi, I'm Marco
+          Hi, I'm Marcho
         </h1>
         <p className="text-gray-400">
           I provide top-notch services in graphic design, virtual assistance,
@@ -49,19 +70,23 @@ const HeroSection = () => {
           enhance your brand and streamline your operations.
         </p>
         <div className="flex gap-4">
-          <a
-            className="bg-indigo-600 text-white text-xl px-3 py-2 w-fit rounded-md font-semibold"
-            href="#contact"
+          <Link
+            className="bg-indigo-600 text-white text-xl px-3 py-2 w-fit rounded-md font-semibold cursor-pointer"
+            to="contact"
+            smooth={true}
+            duration={500}
           >
             Hire Me
-          </a>
+          </Link>
 
-          <a
-            className="bg-emerald-400 text-white text-xl px-3 py-2 w-fit rounded-md font-semibold"
-            href="#works"
+          <Link
+            className="bg-emerald-400 text-white text-xl px-3 py-2 w-fit rounded-md font-semibold cursor-pointer"
+            to="works"
+            smooth={true}
+            duration={500}
           >
             See My Works
-          </a>
+          </Link>
         </div>
       </div>
     </div>

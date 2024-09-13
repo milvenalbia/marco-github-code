@@ -36,7 +36,7 @@ const AboutSection = () => {
           <div className="w-full bg-gray-200 h-1.5 rounded-md">
             <div className="w-full bg-indigo-600 h-1.5 rounded-md"></div>
           </div>
-          <h2 className="text-gray-400 font-medium">Adds Design</h2>
+          <h2 className="text-gray-400 font-medium">Ads Design</h2>
           <div className="w-full bg-gray-200 h-1.5 rounded-md">
             <div className="w-3/4 bg-indigo-600 h-1.5 rounded-md"></div>
           </div>

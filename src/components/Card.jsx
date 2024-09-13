@@ -10,7 +10,7 @@ const Card = () => {
     },
     {
       icon: Icon,
-      title: "Adds Design",
+      title: "Ads Design",
       desc: "I specialized in creating interactive websites for individuals and smalll businesses.",
       link: "#",
     },
@@ -34,7 +34,7 @@ const Card = () => {
     },
     {
       icon: Icon,
-      title: "DEveloper",
+      title: "Web Design",
       desc: "I specialized in creating interactive websites for individuals and smalll businesses.",
       link: "#",
     },

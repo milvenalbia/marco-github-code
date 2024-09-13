@@ -71,7 +71,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           <img className="w-12" src={Logo} alt="" />
           <span className="text-3xl font-bold text-indigo-900 dark:text-white">
-            Marco.
+            Marcho.
           </span>
         </div>
         {/* Menu */}
@@ -130,24 +130,29 @@ const Navbar = () => {
         /> */}
 
         {/* Mobile Menu Icon */}
-        <div className="md:hidden z-10">
+        <div className="md:hidden z-[99999]">
           {showMenu ? (
-            <Close onClick={toggleMenu} className="text-white" />
+            <Close onClick={toggleMenu} className="text-white relative " />
           ) : (
             <Menu onClick={toggleMenu} className="text-black dark:text-white" />
           )}
         </div>
 
         <ul
-          className={`md:hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 space-y-10 rounded-b-xl text-center text-white uppercase transition-transform duration-300 ${
+          className={`md:hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 space-y-10 rounded-b-xl text-center text-white uppercase transition-transform duration-300 z-[100] ${
             showMenu ? "translate-y-0" : "-translate-y-full"
           }`}
         >
           {links.map((link) => (
             <li key={link.name}>
-              <a href={link.link} onClick={toggleMenu}>
+              <Link
+                to={link.link}
+                smooth={true}
+                duration={500}
+                onClick={toggleMenu}
+              >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

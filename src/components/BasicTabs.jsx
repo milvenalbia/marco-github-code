@@ -88,7 +88,7 @@ export default function BasicTabs() {
           justifyContent: "center",
           position: "sticky",
           top: 80,
-          zIndex: 1000,
+          zIndex: 10,
         }}
         className="dark:bg-slate-900 bg-white"
       >
