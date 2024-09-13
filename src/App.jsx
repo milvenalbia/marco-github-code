@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Guest from "./sections/Guest";
 import Login from "./sections/Login";
@@ -9,14 +9,11 @@ function App() {
   const [currentUser, setCurrentUser] = useState(null);
 
   const RequireAuth = ({ children }) => {
-    return currentUser ? (
-      children
-    ) : (
-      <Navigate to="/marco-portfolio/login-admin" />
-    );
+    return currentUser ? children : <Navigate to="/login-admin" />;
   };
+
   return (
-    <BrowserRouter basename="/marco-portfolio">
+    <HashRouter>
       <Routes>
         {/* Public Route */}
         <Route path="/" element={<Guest />} />
@@ -37,7 +34,7 @@ function App() {
           }
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
