@@ -67,8 +67,8 @@ export default function BasicTabs() {
         return acc;
       }, {});
 
-      // Set categories (keys of the grouped data)
-      setCategories(Object.keys(groupedByCategory));
+      // Add "All" category to the categories list
+      setCategories(["All", ...Object.keys(groupedByCategory)]);
 
       // Store projects grouped by category
       setProjects(groupedByCategory);
@@ -99,7 +99,7 @@ export default function BasicTabs() {
         >
           {categories.map((category, index) => (
             <Tab
-              className="text-black dark:text-white"
+              className="text-black dark:text-white font-bold"
               key={category}
               label={category}
               {...a11yProps(index)}
@@ -112,10 +112,17 @@ export default function BasicTabs() {
       {categories.map((category, index) => (
         <CustomTabPanel key={category} value={value} index={index}>
           <div className="p-5 sm:p-0 flex flex-wrap justify-between">
-            {/* Render projects that belong to the selected category */}
-            {projects[category]?.map((project) => (
-              <WorksCard key={project.id} project={project} />
-            ))}
+            {category === "All"
+              ? // If "All" tab is selected, show all projects from every category
+                Object.keys(projects).flatMap((cat) =>
+                  projects[cat].map((project) => (
+                    <WorksCard key={project.id} project={project} />
+                  ))
+                )
+              : // Otherwise, render projects that belong to the selected category
+                projects[category]?.map((project) => (
+                  <WorksCard key={project.id} project={project} />
+                ))}
           </div>
         </CustomTabPanel>
       ))}

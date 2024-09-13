@@ -29,7 +29,7 @@ function App() {
           path="/authenticated"
           element={
             <RequireAuth>
-              <Admin />
+              <Admin setCurrentUser={setCurrentUser} />
             </RequireAuth>
           }
         />

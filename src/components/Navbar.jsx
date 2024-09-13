@@ -2,29 +2,29 @@ import { Close, Menu } from "@mui/icons-material";
 import Logo from "../assets/images/logo.png";
 import Moon from "../assets/images/moon.png";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const links = [
     {
       name: "Homepage",
-      link: "#home",
+      link: "home",
     },
     {
       name: "About me",
-      link: "#about-me",
+      link: "about-me",
     },
     {
       name: "Services",
-      link: "#services",
+      link: "services",
     },
     {
       name: "Works",
-      link: "#works",
+      link: "works",
     },
     {
       name: "Contact",
-      link: "#contact",
+      link: "contact",
     },
   ];
 
@@ -79,14 +79,13 @@ const Navbar = () => {
           {links.map((link) => (
             <li
               key={link.name}
-              className="hover:text-indigo-600 dark:hover:text-indigo-300"
+              className="hover:text-indigo-600 dark:hover:text-indigo-300 cursor-pointer"
             >
-              <a href={link.link}>{link.name}</a>
+              <Link to={link.link} smooth={true} duration={500}>
+                {link.name}
+              </Link>
             </li>
           ))}
-          <li className="hover:text-indigo-600 dark:hover:text-indigo-300">
-            <Link to={"/login-admin"}>Login</Link>
-          </li>
         </ul>
 
         {/* Toggle Icon Button */}
