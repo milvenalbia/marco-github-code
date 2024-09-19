@@ -15,10 +15,6 @@ const Navbar = () => {
       link: "about-me",
     },
     {
-      name: "Services",
-      link: "services",
-    },
-    {
       name: "Works",
       link: "works",
     },

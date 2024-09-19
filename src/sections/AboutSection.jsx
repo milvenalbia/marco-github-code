@@ -1,23 +1,23 @@
 import Dots from "../assets/images/dots.png";
-import Profile from "../assets/images/portrait.png";
+import Profile from "../assets/images/marco1.png";
 
 const AboutSection = () => {
   return (
     <div className="px-10 dark:bg-slate-900" id="about-me">
       <div className="container mx-auto py-20 lg:py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
         {/* Left Side */}
-        <div className="relative">
+        <div className="relative w-[40%]">
           <img
             className="h-1/4 absolute top-0 left-0 -z-10"
             src={Dots}
             alt=""
           />
-          <div className="h-full rounded-full overflow-hidden">
-            <img className="" src={Profile} alt="" />
+          <div className="h-full rounded-[100px] overflow-hidden">
+            <img src={Profile} alt="" />
           </div>
         </div>
         {/* Right Side */}
-        <div className="my-0 lg:my-auto flex flex-col gap-3">
+        <div className="my-0 lg:my-auto w-full flex flex-col gap-3">
           <h1 className="text-indigo-600 dark:text-indigo-300 font-bold">
             ABOUT ME
           </h1>
@@ -27,22 +27,40 @@ const AboutSection = () => {
           <h1 className="text-3xl font-medium dark:text-gray-300">
             Better Experience
           </h1>
-          <p className="text-gray-400">
-            I design and build digital products. I'am also a multi-disciplinary
-            maker with over 10 years of experience in wide range of design
-            diciplinies.
+          <p className="text-gray-400 w-[85%]">
+            I design and build digital products, and I am a multi-disciplinary
+            maker with over 3 years of experience in various fields, including{" "}
+            <span className="text-gray-900 font-extrabold">Graphic Design</span>
+            ,{" "}
+            <span className="text-gray-900 font-extrabold">Video Editing</span>,{" "}
+            <span className="text-gray-900 font-extrabold">
+              Social Media Management
+            </span>
+            , and{" "}
+            <span className="text-gray-900 font-extrabold">
+              Lead Generation Specialist
+            </span>
+            .
           </p>
-          <h2 className="text-gray-400 font-medium">Canva Design</h2>
+          <h2 className="text-gray-400 font-medium">Canva</h2>
           <div className="w-full bg-gray-200 h-1.5 rounded-md">
             <div className="w-full bg-indigo-600 h-1.5 rounded-md"></div>
           </div>
-          <h2 className="text-gray-400 font-medium">Ads Design</h2>
+          <h2 className="text-gray-400 font-medium">Capcut</h2>
           <div className="w-full bg-gray-200 h-1.5 rounded-md">
-            <div className="w-3/4 bg-indigo-600 h-1.5 rounded-md"></div>
+            <div className="w-[95%] bg-indigo-600 h-1.5 rounded-md"></div>
           </div>
-          <h2 className="text-gray-400 font-medium">Video Editing</h2>
+          <h2 className="text-gray-400 font-medium">Figma</h2>
           <div className="w-full bg-gray-200 h-1.5 rounded-md">
-            <div className="w-10/12 bg-indigo-600 h-1.5 rounded-md"></div>
+            <div className="w-[90%] bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 className="text-gray-400 font-medium">Adobe Photoshop</h2>
+          <div className="w-full bg-gray-200 h-1.5 rounded-md">
+            <div className="w-[92%] bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+          <h2 className="text-gray-400 font-medium">Illustrator</h2>
+          <div className="w-full bg-gray-200 h-1.5 rounded-md">
+            <div className="w-[90%] bg-indigo-600 h-1.5 rounded-md"></div>
           </div>
         </div>
       </div>

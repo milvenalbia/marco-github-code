@@ -16,9 +16,9 @@ const Portfolio = () => {
             Works & Projects
           </h1>
           <p className="w-full px-10 md:w-1/2 md:px-0 text-center text-gray-400">
-            I help designers, small agencies and businesses bring their ideas to
-            life. Powered by Figma, VS Code and coffee. I turn your requirements
-            into a well-designed websites
+            I assist designers, small agencies, and businesses in turning their
+            ideas into reality. Leveraging my skills in Graphic Design, Video
+            Editing, Social Media Management, and Lead Generation.
           </p>
         </div>
         {/* Bottom */}

@@ -10,22 +10,40 @@ const Form = () => {
       value: "Logo",
     },
     {
-      value: "Poster",
+      value: "Posters",
     },
     {
-      value: "Book Cover",
+      value: "Packaging",
     },
     {
-      value: "Thumbnail",
+      value: "Social Media Posts",
     },
     {
-      value: "Vertical Videos",
+      value: "Book Covers",
     },
     {
-      value: "Square Videos",
+      value: "Infographics",
     },
     {
-      value: "Web Design",
+      value: "Instagram Stories",
+    },
+    {
+      value: "Email Designs",
+    },
+    {
+      value: "Brochures/Flyers",
+    },
+    {
+      value: "Youtube Thumbnails",
+    },
+    {
+      value: "Short Videos",
+    },
+    {
+      value: "Long videos",
+    },
+    {
+      value: "Web Designs",
     },
   ];
 

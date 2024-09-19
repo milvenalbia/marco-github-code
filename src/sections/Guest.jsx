@@ -15,7 +15,7 @@ const Guest = () => {
       <AboutSection />
 
       {/* Services Section */}
-      <ServicesSection />
+      {/* <ServicesSection /> */}
 
       {/* Portfolio Section */}
       <Portfolio />

@@ -1,11 +1,16 @@
 import { Link } from "react-scroll";
-import Man from "../assets/images/man.png";
+import Man from "../assets/images/marco.png";
 import Navbar from "../components/Navbar";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const HeroSection = () => {
   const [text] = useTypewriter({
-    words: ["Video Editor", "Graphic Designer", "Virtual Assistant"],
+    words: [
+      "Graphic Designer",
+      "Video Editor",
+      "Social Media Manager",
+      "Lead Generation Expert",
+    ],
     loop: 0,
     typeSpeed: 100,
     deleteSpeed: 100,
@@ -21,7 +26,7 @@ const HeroSection = () => {
       {/* Hero content */}
       {/* Image */}
       <img
-        className="absolute bottom-0 -right-6 lg:right-36  lg:left-0 mx-auto h-[75%] sm:h-5/6 object-cover"
+        className="absolute bottom-0 -right-6 lg:right-36 lg:left-36 left-[230px] mx-auto h-[75%] sm:h-[75%] md:h-[95%] object-cover"
         src={Man}
         alt=""
       />
@@ -31,7 +36,7 @@ const HeroSection = () => {
       {/* Text w/ Animeted Text*/}
       <div className="absolute top-1/3 left-5 text-2xl sm:left-5 sm:text-3xl md:left-10 md:text-4xl lg:text-5xl lg:left-5 xl:left-20 xl:text-6xl 2xl:left-40 font-bold">
         <span className="text-gray-600 dark:text-gray-500">Freelance</span>
-        <p className="text-red-500 dark:text-red-700">
+        <p className="text-red-500 dark:text-red-700 sm:text-2xl md:text-3xl lg:text-[45px]">
           {text}
           <Cursor />
         </p>
@@ -63,11 +68,11 @@ const HeroSection = () => {
           Hi, I'm Marcho
         </h1>
         <p className="text-gray-400">
-          I provide top-notch services in graphic design, virtual assistance,
-          and video editing. I create stunning visual content, efficiently
-          manage administrative tasks, and produce high-quality videos to meet
-          your needs. Partner with me for reliable and creative solutions that
-          enhance your brand and streamline your operations.
+          I am a creative and versatile professional with a strong background in
+          graphic design, video editing, social media management, and lead
+          generation. With a keen eye for aesthetics and a passion for
+          storytelling, I specialize in crafting visually engaging content that
+          resonates with target audiences.
         </p>
         <div className="flex gap-4">
           <Link
