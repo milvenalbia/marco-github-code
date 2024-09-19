@@ -40,7 +40,7 @@ const Form = () => {
       value: "Short Videos",
     },
     {
-      value: "Long videos",
+      value: "Long Videos",
     },
     {
       value: "Web Designs",
