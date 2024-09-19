@@ -13,7 +13,7 @@ const Portfolio = () => {
             P O R T F O L I O
           </h1>
           <h1 className="text-3xl font-medium dark:text-gray-300">
-            Works & Projects
+            Sample Works
           </h1>
           <p className="w-full px-10 md:w-1/2 md:px-0 text-center text-gray-400">
             I assist designers, small agencies, and businesses in turning their

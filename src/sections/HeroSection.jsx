@@ -26,7 +26,7 @@ const HeroSection = () => {
       {/* Hero content */}
       {/* Image */}
       <img
-        className="absolute bottom-0 -right-6 lg:right-36 lg:left-36 left-[230px] mx-auto h-[75%] sm:h-[75%] md:h-[95%] object-cover"
+        className="absolute bottom-0 -right-6 lg:right-36 lg:left-36 left-[230px] mx-auto h-[75%] sm:h-[75%] md:h-[90%] object-cover"
         src={Man}
         alt=""
       />
@@ -34,9 +34,9 @@ const HeroSection = () => {
       <div className="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"></div>
 
       {/* Text w/ Animeted Text*/}
-      <div className="absolute top-1/3 left-5 text-2xl sm:left-5 sm:text-3xl md:left-10 md:text-4xl lg:text-5xl lg:left-5 xl:left-20 xl:text-6xl 2xl:left-40 font-bold">
-        <span className="text-gray-600 dark:text-gray-500">Freelance</span>
-        <p className="text-red-500 dark:text-red-700 sm:text-2xl md:text-3xl lg:text-[45px]">
+      <div className="absolute top-1/3 left-5 text-2xl sm:left-5 sm:text-3xl md:left-10 md:text-4xl lg:text-5xl lg:left-5 xl:left-20 xl:text-6xl 2xl:left-28 font-bold">
+        <span className="text-gray-600 dark:text-gray-500">My Roles</span>
+        <p className="text-red-500 dark:text-red-700 sm:text-2xl md:text-3xl lg:text-[45px] lg:mt-4">
           {text}
           <Cursor />
         </p>
@@ -58,7 +58,7 @@ const HeroSection = () => {
           smooth={true}
           duration={500}
         >
-          My Works
+          Sample Works
         </Link>
       </div>
 

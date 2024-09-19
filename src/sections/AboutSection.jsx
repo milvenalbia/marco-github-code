@@ -6,7 +6,7 @@ const AboutSection = () => {
     <div className="px-10 dark:bg-slate-900" id="about-me">
       <div className="container mx-auto py-20 lg:py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
         {/* Left Side */}
-        <div className="relative w-[40%]">
+        <div className="relative sm:w-[40%]">
           <img
             className="h-1/4 absolute top-0 left-0 -z-10"
             src={Dots}
@@ -29,7 +29,7 @@ const AboutSection = () => {
           </h1>
           <p className="text-gray-400 w-[85%]">
             I design and build digital products, and I am a multi-disciplinary
-            maker with over 3 years of experience in various fields, including{" "}
+            maker with over 5 years of experience in various fields, including{" "}
             <span className="text-gray-900 font-extrabold">Graphic Design</span>
             ,{" "}
             <span className="text-gray-900 font-extrabold">Video Editing</span>,{" "}
@@ -38,7 +38,7 @@ const AboutSection = () => {
             </span>
             , and{" "}
             <span className="text-gray-900 font-extrabold">
-              Lead Generation Specialist
+              Lead Generation
             </span>
             .
           </p>

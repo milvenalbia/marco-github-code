@@ -67,7 +67,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           <img className="w-12" src={Logo} alt="" />
           <span className="text-3xl font-bold text-indigo-900 dark:text-white">
-            Marcho.
+            Marcho
           </span>
         </div>
         {/* Menu */}

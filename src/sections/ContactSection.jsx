@@ -21,7 +21,7 @@ const ContactSection = () => {
         {/* Bottom */}
 
         <div className="flex items-center justify-center py-16">
-          <div className="flex items-center gap-6">
+          <div className="flex sm:flex-row flex-col items-center gap-6">
             <div className="flex-1 flex flex-col items-center">
               <svg
                 className="text-[74px] text-gray-500"
