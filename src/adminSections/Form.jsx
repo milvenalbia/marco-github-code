@@ -45,6 +45,12 @@ const Form = () => {
     {
       value: "Web Designs",
     },
+    {
+      value: "Lead Generation",
+    },
+    {
+      value: "SocMed Management",
+    },
   ];
 
   const [category, setCategory] = useState("");
